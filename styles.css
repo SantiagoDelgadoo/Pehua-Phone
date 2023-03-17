@@ -315,7 +315,11 @@ footer {
 .card {
   width: 280px;
   height: 420px;
-  background-color: rgb(243, 243, 243);
+  background: rgba(9, 7, 7, 0.179) !important;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border: none;
   border-radius: 0px;
   border-radius: 10px 10px 5px 5px;
@@ -346,6 +350,7 @@ footer {
 
 }
 .card h3 {
+  color: white;
   height: 20px;
   font-size: 18px;
   font-family:  'Raleway', sans-serif;
@@ -355,6 +360,7 @@ footer {
 
 .descriptioncontainercard li{
   font-size: 12px;
+  color: white;
   font-family:  'Raleway', sans-serif;
   padding-right: 10px;
   height: 25px;
@@ -369,7 +375,7 @@ footer {
     border: none;
     border-radius: 4px;
     font-weight: 400;
-    color: rgb(36, 35, 35);
+    color: white;
     height: 30px;
     display: flex;
     justify-content: space-evenly;
@@ -378,7 +384,7 @@ footer {
     margin-top: 5px;
     font-size: 12px;
     font-weight: 700;
-    border: 3px solid #D35A7E;
+    border: 2px solid rgb(242, 233, 233);
   }
 
 
@@ -386,7 +392,7 @@ footer {
     width: 100%;
     padding: 5px;
     appearance: none;
-    background-color: #E26280;
+    background-color: #262D35;
     border: 1px solid rgba(27, 31, 35, 0.15);
     border-radius: 6px;
     box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
@@ -412,9 +418,11 @@ footer {
 }
 
   button:hover {
-    background-color: #893476;
+    background-color: rgb(242, 233, 233);
+    color: rgb(20, 19, 19);
     text-decoration: none;
-    transition-duration: 0.1s;
+    transition-duration: 0.4s;
+    transition: ease-in-out 0.4s;
 }
 
 .titulotienda{
