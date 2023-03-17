@@ -353,18 +353,13 @@ footer {
   margin-bottom: 10px;
 }
 
-.descriptioncontainercard p{
+.descriptioncontainercard li{
   font-size: 12px;
   font-family:  'Raleway', sans-serif;
   padding-right: 10px;
-  height: 95px;
+  height: 25px;
   font-weight: 400;
   overflow: auto;
-}
-
-.descriptioncontainercard p::-webkit-scrollbar {
-  width: 5px;
-  background-color: #D35A7E; 
 }
 
   .preciocard{
