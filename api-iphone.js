@@ -131,5 +131,5 @@ let phone = [
         rammemory: "6ram",
         price: 1330,
     },
- 
+    
 ]
