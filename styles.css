@@ -300,110 +300,6 @@ footer {
   margin-top: 100px;
 }
 
-.input {
-  width: 290px;
-  background-color: #f5f5f5;
-  color: #242424;
-  padding: .15rem .5rem;
-  min-height: 40px;
-  border-radius: 4px;
-  outline: none;
-  border: none;
-  line-height: 1.15;
-  box-shadow: 0px 10px 20px -18px;
-}
-
-input:focus {
-  border-bottom: 3px solid #DC5F80;
-  border-radius: 4px 4px 2px 2px;
-}
-
-input:hover {
-  outline: 1px solid lightgrey;
-}
-
-.cbx {
-  position: relative;
-  top: 1px;
-  width: 27px;
-  height: 27px;
-  border: 1px solid #c8ccd4;
-  border-radius: 3px;
-  cursor: pointer;
-  display: block;
-}
-
-.cbx:after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 8px;
-  width: 7px;
-  height: 14px;
-  opacity: 0;
-  transform: rotate(45deg) scale(0);
-  border-right: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  transition: all 0.3s ease;
-  transition-delay: 0.15s;
-}
-
-.lbl {
-  margin-left: 5px;
-  vertical-align: middle;
-  cursor: pointer;
-}
-
-#cbx:checked ~ .cbx {
-  border-color: transparent;
-  background: black;
-  animation: jelly 0.6s ease;
-}
-
-#cbx:checked ~ .cbx:after {
-  opacity: 1;
-  transform: rotate(45deg) scale(1);
-}
-
-.cntr {
-  position: relative;
-  margin-left: 3rem;
-}
-
-@keyframes jelly {
-  from {
-  transform: scale(1, 1);
-  }
-
-  30% {
-  transform: scale(1.25, 0.75);
-  }
-
-  40% {
-  transform: scale(0.75, 1.25);
-  }
-
-  50% {
-  transform: scale(1.15, 0.85);
-  }
-
-  65% {
-  transform: scale(0.95, 1.05);
-  }
-
-  75% {
-  transform: scale(1.05, 0.95);
-  }
-
-  to {
-  transform: scale(1, 1);
-  }
-}
-
-.hidden-xs-up {
-  display: none!important;
-}
-
 .containerinputysearch{
   display: flex;
   align-items: center;
@@ -411,7 +307,7 @@ input:hover {
 }
 
 .maintienda{
-  height: 220vh;
+  height: 300vh;
   background: rgb(244,108,130);
   background: linear-gradient(68deg, rgba(244,108,130,1) 0%, rgba(97,31,114,1) 100%);
 }
@@ -454,6 +350,7 @@ input:hover {
   font-size: 18px;
   font-family:  'Raleway', sans-serif;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .descriptioncontainercard p{
@@ -462,12 +359,12 @@ input:hover {
   padding-right: 10px;
   height: 95px;
   font-weight: 400;
-  border-bottom: 1px solid rgb(212, 211, 211);
-  overflow: auto;}
+  overflow: auto;
+}
 
 .descriptioncontainercard p::-webkit-scrollbar {
   width: 5px;
-  background-color: #F5F5F5; 
+  background-color: #D35A7E; 
 }
 
   .preciocard{
@@ -483,11 +380,10 @@ input:hover {
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 10px;
-    margin-top: -5px;
+    margin-top: 5px;
     font-size: 12px;
-    padding: 10px;
     font-weight: 700;
-    border: 1px solid rgb(199, 195, 195);
+    border: 3px solid #D35A7E;
   }
 
 
@@ -503,7 +399,7 @@ input:hover {
     color: white;
     cursor: pointer;
     display: inline-block;
-    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-family: "Nunito", sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -517,6 +413,7 @@ input:hover {
     vertical-align: middle;
     white-space: nowrap;
     word-wrap: break-word;
+    margin-top: 10px;
 }
 
   button:hover {
@@ -526,12 +423,51 @@ input:hover {
 }
 
 .titulotienda{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Secular One', sans-serif;
   font-weight: bold;
   color: white;
 }
 
-  
+.card img:hover{
+  transform: scale(1.1);
+}
 
+.checkboxes {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 110px;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  margin-top: 12px;
+}
+
+.labelcheck{
+  margin-right: 40px;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+}
+
+.inputcheckbox{
+  width: 14px;
+  height: 14px;
+}
+
+.barrasearch{
+  border-radius: 8px;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  padding: 7px;
+  width: 270px;
+  height: 30px;
+  font-size: 12px
+}
 
 
