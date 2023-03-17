@@ -307,7 +307,7 @@ footer {
 }
 
 .maintienda{
-  height: 220vh;
+  height: 300vh;
   background: rgb(244,108,130);
   background: linear-gradient(68deg, rgba(244,108,130,1) 0%, rgba(97,31,114,1) 100%);
 }
@@ -350,6 +350,7 @@ footer {
   font-size: 18px;
   font-family:  'Raleway', sans-serif;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .descriptioncontainercard p{
@@ -358,12 +359,12 @@ footer {
   padding-right: 10px;
   height: 95px;
   font-weight: 400;
-  border-bottom: 1px solid rgb(212, 211, 211);
-  overflow: auto;}
+  overflow: auto;
+}
 
 .descriptioncontainercard p::-webkit-scrollbar {
   width: 5px;
-  background-color: #F5F5F5; 
+  background-color: #D35A7E; 
 }
 
   .preciocard{
@@ -379,11 +380,10 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 10px;
-    margin-top: -5px;
+    margin-top: 5px;
     font-size: 12px;
-    padding: 10px;
     font-weight: 700;
-    border: 1px solid rgb(199, 195, 195);
+    border: 3px solid #D35A7E;
   }
 
 
@@ -399,7 +399,7 @@ footer {
     color: white;
     cursor: pointer;
     display: inline-block;
-    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-family: "Nunito", sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -413,6 +413,7 @@ footer {
     vertical-align: middle;
     white-space: nowrap;
     word-wrap: break-word;
+    margin-top: 10px;
 }
 
   button:hover {
@@ -428,7 +429,7 @@ footer {
 }
 
 .card img:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .checkboxes {
@@ -446,6 +447,27 @@ footer {
   margin-top: 12px;
 }
 
+.labelcheck{
+  margin-right: 40px;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+}
 
+.inputcheckbox{
+  width: 14px;
+  height: 14px;
+}
+
+.barrasearch{
+  border-radius: 8px;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  padding: 7px;
+  width: 270px;
+  height: 30px;
+  font-size: 12px
+}
 
 
