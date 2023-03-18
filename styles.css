@@ -310,6 +310,7 @@ footer {
   min-height: 320vh;
   background: rgb(244,108,130);
   background: linear-gradient(68deg, rgba(244,108,130,1) 0%, rgba(97,31,114,1) 100%);
+  padding-bottom: 40px;
 }
 
 .card {
@@ -431,10 +432,6 @@ footer {
   color: white;
 }
 
-.card img:hover{
-  transform: scale(1.1);
-}
-
 .checkboxes {
   width: 300px;
   height: 50px;
@@ -476,7 +473,7 @@ footer {
 .card {
   width: 280px;
   height: 420px;
-  background: rgba(9, 7, 7, 0.179) !important;
+  background: #FFFFFF !important;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -496,9 +493,9 @@ footer {
 }
 
 .imgcard img{
-  width: 100%;
+  width: 270px;
   height: 220px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 5px 5px 0px 0px;
 }
 
@@ -511,7 +508,7 @@ footer {
 
 }
 .card h3 {
-  color: white;
+  color: black;
   height: 20px;
   font-size: 18px;
   font-family:  'Raleway', sans-serif;
@@ -521,7 +518,7 @@ footer {
 
 .descriptioncontainercard li{
   font-size: 12px;
-  color: white;
+  color: black;
   font-family:  'Raleway', sans-serif;
   padding-right: 10px;
   height: 25px;
@@ -536,7 +533,7 @@ footer {
     border: none;
     border-radius: 4px;
     font-weight: 400;
-    color: white;
+    color: black;
     height: 30px;
     display: flex;
     justify-content: space-evenly;

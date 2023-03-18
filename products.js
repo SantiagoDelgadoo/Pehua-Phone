@@ -24,12 +24,12 @@ function imprimir (array){ //creo la funcion imprimir y le paso un parametro en 
         </div>
         <div class="descriptioncontainercard">
             <h3>${celular.name}</h3>
-            <li>${celular.brand}</li>
-            <li>${celular.screen}</li>
-            <li>${celular.frontcamera}</li>
-            <li>${celular.internalmemory}</li>
-            <li>${celular.rammemory}</li>
-            <div class="preciocard">${celular.price}</div>
+            <li>Brand: ${celular.brand}</li>
+            <li>Screen: ${celular.screen}</li>
+            <li>Front Camera: ${celular.frontcamera}</li>
+            <li>Internal Memory: ${celular.internalmemory}</li>
+            <li>Ram Memory: ${celular.rammemory}</li>
+            <div class="preciocard">$${celular.price} USD</div>
             <button class="button2 btn-donate">
                 Add to cart
             </button>
