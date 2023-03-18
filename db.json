@@ -12,15 +12,15 @@
       "price": 250
     },
     {
-      "id": 2,
-      "photo": "https://mercado.ripleylabs.com/wp-content/uploads/2023/02/refurb-iphone8plus-spacegray.jpg",
-      "name": "iPhone 8 plus",
+      "id": 12,
+      "photo": "https://cdn-ipoint.waugi.com.ar/22654-large_default/iphone-13-pro-max-512gb-gold.jpg",
+      "name": "iPhone 13 Pro Max",
       "brand": "Apple",
-      "screen": "IPS de 5.5",
-      "frontcamera": "7MPX",
-      "internalmemory": "64GB",
-      "rammemory": "4ram",
-      "price": 300
+      "screen": "IPS de 6.7",
+      "frontcamera": "12MPX",
+      "internalmemory": "512GB",
+      "rammemory": "6ram",
+      "price": 1050
     },
     {
       "id": 3,
@@ -34,6 +34,17 @@
       "price": 320
     },
     {
+      "id": 5,
+      "photo": "https://ripleycl.imgix.net/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fim-prod-products-images%2F1603802729652_1-b183fd89-bdb4-4ff6-b9c1-c5faa5555558.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=104d2dec59e264f00fe2d8325b6bcf5e",
+      "name": "iPhone XR",
+      "brand": "Apple",
+      "screen": "IPS de 6.1",
+      "frontcamera": "7MPX",
+      "internalmemory": "128GB",
+      "rammemory": "3ram",
+      "price": 380
+    },
+    {
       "id": 4,
       "photo": "http://d3ugyf2ht6aenh.cloudfront.net/stores/001/116/601/products/x-web-white1-2f9ebf0d2cf4f2165c16397743347460-640-0.jpg",
       "name": "iPhone X",
@@ -45,15 +56,15 @@
       "price": 330
     },
     {
-      "id": 5,
-      "photo": "https://ripleycl.imgix.net/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fim-prod-products-images%2F1603802729652_1-b183fd89-bdb4-4ff6-b9c1-c5faa5555558.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=104d2dec59e264f00fe2d8325b6bcf5e",
-      "name": "iPhone XR",
+      "id": 14,
+      "photo": "https://home.ripley.cl/store/Attachment/WOP/D191/2000392805328/2000392805328_2.jpg",
+      "name": "iPhone 14 Pro Max",
       "brand": "Apple",
       "screen": "IPS de 6.1",
-      "frontcamera": "7MPX",
-      "internalmemory": "128GB",
-      "rammemory": "3ram",
-      "price": 380
+      "frontcamera": "12MPX",
+      "internalmemory": "512GB",
+      "rammemory": "6ram",
+      "price": 1330
     },
     {
       "id": 6,
@@ -122,15 +133,15 @@
       "price": 940
     },
     {
-      "id": 12,
-      "photo": "https://cdn-ipoint.waugi.com.ar/22654-large_default/iphone-13-pro-max-512gb-gold.jpg",
-      "name": "iPhone 13 Pro Max",
+      "id": 2,
+      "photo": "https://mercado.ripleylabs.com/wp-content/uploads/2023/02/refurb-iphone8plus-spacegray.jpg",
+      "name": "iPhone 8 plus",
       "brand": "Apple",
-      "screen": "IPS de 6.7",
-      "frontcamera": "12MPX",
-      "internalmemory": "512GB",
-      "rammemory": "6ram",
-      "price": 1050
+      "screen": "IPS de 5.5",
+      "frontcamera": "7MPX",
+      "internalmemory": "64GB",
+      "rammemory": "4ram",
+      "price": 300
     },
     {
       "id": 13,
@@ -140,17 +151,6 @@
       "screen": "IPS de 6.1",
       "frontcamera": "12MPX",
       "internalmemory": "128GB",
-      "rammemory": "6ram",
-      "price": 1330
-    },
-    {
-      "id": 14,
-      "photo": "https://home.ripley.cl/store/Attachment/WOP/D191/2000392805328/2000392805328_2.jpg",
-      "name": "iPhone 14 Pro Max",
-      "brand": "Apple",
-      "screen": "IPS de 6.1",
-      "frontcamera": "12MPX",
-      "internalmemory": "512GB",
       "rammemory": "6ram",
       "price": 1330
     }
