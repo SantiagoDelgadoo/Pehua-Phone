@@ -67,15 +67,15 @@
       "price": 1330
     },
     {
-      "id": 6,
-      "photo": " https://ripleycl.imgix.net/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fim-prod-products-images%2F1580874373325_1-8e96c6b3-c9ff-4913-a8ff-bd0ff8ba704f.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=50f5bf952ff5423ab207303ff841a043",
-      "name": "iPhone XS",
+      "id": 13,
+      "photo": "https://mercado.ripleylabs.com/wp-content/uploads/2023/02/Captura-de-pantalla-2023-02-24-154323.jpg",
+      "name": "iPhone 14",
       "brand": "Apple",
-      "screen": "IPS de 5.8",
+      "screen": "IPS de 6.1",
       "frontcamera": "12MPX",
-      "internalmemory": "64GB",
-      "rammemory": "4ram",
-      "price": 420
+      "internalmemory": "128GB",
+      "rammemory": "6ram",
+      "price": 1330
     },
     {
       "id": 7,
@@ -144,15 +144,15 @@
       "price": 300
     },
     {
-      "id": 13,
-      "photo": "https://mercado.ripleylabs.com/wp-content/uploads/2023/02/Captura-de-pantalla-2023-02-24-154323.jpg",
-      "name": "iPhone 14",
+      "id": 6,
+      "photo": " https://ripleycl.imgix.net/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fim-prod-products-images%2F1580874373325_1-8e96c6b3-c9ff-4913-a8ff-bd0ff8ba704f.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=50f5bf952ff5423ab207303ff841a043",
+      "name": "iPhone XS",
       "brand": "Apple",
-      "screen": "IPS de 6.1",
+      "screen": "IPS de 5.8",
       "frontcamera": "12MPX",
-      "internalmemory": "128GB",
-      "rammemory": "6ram",
-      "price": 1330
+      "internalmemory": "64GB",
+      "rammemory": "4ram",
+      "price": 420
     }
   ]
 }
