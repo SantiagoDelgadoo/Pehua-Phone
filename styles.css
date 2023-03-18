@@ -385,7 +385,7 @@ footer {
     margin-top: 5px;
     font-size: 12px;
     font-weight: 700;
-    border: 2px solid rgb(242, 233, 233);
+    border: 2px solid rgb(10, 10, 10);
   }
 
 
@@ -419,8 +419,8 @@ footer {
 }
 
   button:hover {
-    background-color: rgb(242, 233, 233);
-    color: rgb(20, 19, 19);
+    background-color: #6F2673;
+    color: white;
     text-decoration: none;
     transition-duration: 0.4s;
     transition: ease-in-out 0.4s;
@@ -430,21 +430,6 @@ footer {
   font-family: 'Secular One', sans-serif;
   font-weight: bold;
   color: white;
-}
-
-.checkboxes {
-  width: 300px;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: 110px;
-  flex-wrap: wrap;
-  align-content: center;
-  gap: 5px;
-  margin-bottom: 10px;
-  margin-top: 12px;
 }
 
 .labelcheck{
@@ -485,7 +470,14 @@ footer {
   flex-direction: column;
   display: flex;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
+
+.card:hover{
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+} 
 
 .imgcard{
   height: 50%;
@@ -542,7 +534,7 @@ footer {
     margin-top: 5px;
     font-size: 12px;
     font-weight: 700;
-    border: 2px solid rgb(242, 233, 233);
+    border: 3px solid #6F2673;
   }
 
 
