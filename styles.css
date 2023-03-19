@@ -701,6 +701,13 @@ footer {
     background: radial-gradient(100% 100% at center,hsl(0,0%,60%) 4.8%,hsla(0,0%,60%,0) 5%),
       linear-gradient(hsla(0,0%,55%,0) 46.9%,hsl(0,0%,65%) 47% 52.9%,hsla(0,0%,65%,0) 53%) 50% 50% / 99% 99% no-repeat;
   }
+
+  .ratoncito{
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   /* Animations */
   @keyframes hamster {
@@ -811,5 +818,29 @@ footer {
     to {
       transform: rotate(-1turn);
     }
+  }
+
+  .containernotfound{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .containernotfound img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 360px;
+  }
+
+  .containernotfound p {
+    font-size: 35px;
+    margin-top: 32px;
+    color: white;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 600;
   }
 
