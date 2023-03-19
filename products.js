@@ -2,6 +2,7 @@ async function consumirApi() { // creo una funcion asincrona a la cual le doy de
     let containerCards = document.getElementById("containerbigcards") //traigo el contenedor donde quiero q aparezca el cargador de la pagina
     containerCards.innerHTML = //hago que se imprima y debajo en linea 40 lo vacio
         `
+        <div class="ratoncito">
     <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
 	<div class="wheel"></div>
 	<div class="hamster">
@@ -20,13 +21,43 @@ async function consumirApi() { // creo una funcion asincrona a la cual le doy de
 	</div>
 	<div class="spoke"></div>
 </div>
+</div>
     `
     let api = await fetch('https://my-json-server.typicode.com/SantiagoDelgadoo/Pehua-Phone/phone') //declaro variable quue en este caso se llama api y despues la igualo a await para que espere la respuesta y fetch para que recupere la informacion del json y le paso el link de la api
     console.log(api); //compruebo que el json este funcionando correctamente
 
-    let datosCelulares = await api.json() //delcaro variable que va a ser igual a los datos, es decir a los celulares con cada uno de sus detalles y a lo paso a formato json
-    console.log(datosCelulares);
-    imprimir(datosCelulares) //llamo a la funcion
+    let arrayCelulares = await api.json() //delcaro variable que va a ser igual a los datos, es decir a los celulares con cada uno de sus detalles y a lo paso a formato json
+    console.log(arrayCelulares);
+    imprimir(arrayCelulares) //llamo a la funcion
+
+    function barraSearch() { //declaro funcion para tener codigo limpio y prolijo
+        let textoEscritoPorUsuario = " " //declaro variable y la igualo a un string vacio que esto va a ser lo que escriba la persona
+        let search = document.getElementById('search') //declaro otra variable en la cual me voy a traer mi barra de busqueda con el get element by id es decir con el id de la misma
+        console.log(search);
+        search.addEventListener('keyup', (x) => { //le paso un escuchador de eventos de tipo keyup es decir que va a tomar cada vez que la persona escriba algo en el search 
+            textoEscritoPorUsuario = x.target.value.toLowerCase() // hago que textoescritoporusuario sea igual a lo que la persona escribio
+            let arrayDeCelularesFiltrados = arrayCelulares.filter((celular) => { //hago un filtro de de mis celulares y digo que por cada celular del array
+                return celular.name.toLowerCase().includes(textoEscritoPorUsuario) //me retorne es decir me muestre el nombre del celular en minuscula que incluya lo que escribio la persona
+            })
+            if (arrayDeCelularesFiltrados.length === 0) { // si el celular que busco la persona en el search no se encuentra
+                containerCards.innerHTML = // que me imprima el gif que esta a continuacion y que no se encontraron resultados
+                `
+                <div class="containernotfound">
+                <img src="./recursos/gif.gif" alt="not found">
+                <p> Not Found </p>
+                </div>
+                `
+            } else { //si se encuentra lo buscado
+                imprimir(arrayDeCelularesFiltrados) //que muestre el celular que coincida con eso
+            }
+        })
+        search.addEventListener('input',(x)=>{ // a mi barra de search le paso un escuchador de eventos de tipo input es decir de tipo boton 
+            if (search.value === "") { //hago un condicional de que si la barra de search.value es decir esta vacio 
+                imprimir(arrayCelulares) //que imprima todos los telefonos
+            }
+        })
+    }
+    barraSearch()
 }
 consumirApi() //llamo a la funcion
 
