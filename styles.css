@@ -296,8 +296,7 @@ footer {
 }
 
 .seccionshop{
-  min-height: 320vh;
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 .containerinputysearch{
@@ -307,10 +306,20 @@ footer {
 }
 
 .maintienda{
-  min-height: 320vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.colorfondonav {
   background: rgb(244,108,130);
   background: linear-gradient(68deg, rgba(244,108,130,1) 0%, rgba(97,31,114,1) 100%);
-  padding-bottom: 40px;
+}
+
+.containerinputysearch {
+  height: 20vh;
+  background: rgb(244,108,130);
+  background: linear-gradient(68deg, rgba(244,108,130,1) 0%, rgba(97,31,114,1) 100%);
 }
 
 .card {
@@ -430,6 +439,9 @@ footer {
   font-family: 'Secular One', sans-serif;
   font-weight: bold;
   color: white;
+  background: rgb(244,108,130);
+  margin: 0;
+  background: linear-gradient(68deg, rgba(244,108,130,1) 0%, rgba(97,31,114,1) 100%);
 }
 
 .labelcheck{
