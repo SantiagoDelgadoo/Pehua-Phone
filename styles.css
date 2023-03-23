@@ -32,6 +32,11 @@ nav {
     -webkit-backdrop-filter: blur(8.6px) !important;
 }
 
+nav .active {
+  border-bottom: 4px solid #662172;
+  border-radius: 2px;
+}
+
 
 .enlacenav {
     color: white!important;

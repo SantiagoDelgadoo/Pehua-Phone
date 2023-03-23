@@ -41,7 +41,7 @@ async function consumirApi() { // creo una funcion asincrona a la cual le doy de
             })
             if (arrayDeCelularesFiltrados.length === 0) { // si el celular que busco la persona en el search no se encuentra
                 containerCards.innerHTML = // que me imprima el gif que esta a continuacion y que no se encontraron resultados
-                `
+                    `
                 <div class="containernotfound">
                 <img src="./recursos/gif.gif" alt="not found">
                 <p> Not Found </p>
@@ -51,7 +51,7 @@ async function consumirApi() { // creo una funcion asincrona a la cual le doy de
                 imprimir(arrayDeCelularesFiltrados) //que muestre el celular que coincida con eso
             }
         })
-        search.addEventListener('input',(x)=>{ // a mi barra de search le paso un escuchador de eventos de tipo input es decir de tipo boton 
+        search.addEventListener('input', (x) => { // a mi barra de search le paso un escuchador de eventos de tipo input es decir de tipo boton 
             if (search.value === "") { //hago un condicional de que si la barra de search.value es decir esta vacio 
                 imprimir(arrayCelulares) //que imprima todos los telefonos
             }
@@ -60,6 +60,10 @@ async function consumirApi() { // creo una funcion asincrona a la cual le doy de
     barraSearch()
 }
 consumirApi() //llamo a la funcion
+
+let arrayDeCelulares = phones.map((phone) => phone.internalmemory)  
+let arrayDeCelularesSeteadas = new Set(arrayDeCelulares) //set es una lista sin repetir
+arrayDeCelularesSeteadas.forEach(imprimirCheckbox)
 
 
 
@@ -90,4 +94,20 @@ function imprimir(array) { //creo la funcion imprimir y le paso un parametro en 
         </div>
     </div>`
     });
-} 
+}
+
+
+/////////////////////////////////////////////IMPRIMO LOS CHECKBOX DINAMICOS////////////////////////////////////////////////////////////////////////
+let contenedorcheck = document.getElementById(contenedor);
+
+function imprimirCheckbox(internalmemory) {
+    /* let fn = (phone) => phone.internalmemory;
+    let internalmemory = new Set(phone.filter(fn).map(fn));
+    internalmemory.forEach((internalmemory) => { */
+        containerCheckbox.innerHTML +=
+            `<label class="labelcheck">${internalmemory}
+          <input type="checkbox" value="${internalmemory}" class="inputcheckbox">
+          </label>`;
+    };
+imprimirCheckbox(internalmemory);
+
